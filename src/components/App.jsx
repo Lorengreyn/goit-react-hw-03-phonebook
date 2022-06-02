@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Form from "./Form/Form";
-import Section from "Section/Section";
+import Section from "components/Section/Section";
 import ContactList from "./ContactsList/ContactsList";
 import Filter from "./Filter/Filter";
 import { nanoid } from "nanoid";
@@ -20,7 +20,7 @@ class App extends Component {
     } else {
       this.setState({ contacts: initContacts });
     }
- console.log(parsedContacts);
+//  console.log(parsedContacts);
   }
 
   componentDidUpdate(prevProps, prevState) {
